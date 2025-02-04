@@ -20,3 +20,20 @@ function mul(){
     document.getElementsByClassName('output')[0].innerText=`mul of number is ${out}`
 }
 //division part of javascript
+function div(){
+    let a = document.getElementById('first').value;
+    let b = document.getElementById('second').value;
+    if (Number(b) ===0){
+        document.getElementsByClassName('output')[0].innerText = "cannot divide by zero!";
+    }else{
+        let out = Number(a)/Number(b);
+        document.getElementsByClassName('output')[0].innerText = `Division of numbers is ${out}`;
+
+    }
+}
+//clear fields parts of javascript
+function clearFields(){
+    document.getElementById('first').value = '';
+    document.getElementById('second').value = '';
+    document.getElementsByClassName('output')[0].innerText = '';
+}

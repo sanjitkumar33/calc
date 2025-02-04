@@ -1,14 +1,15 @@
 <html>
     <head>
         <title>my calculator</title>
+        <link rel="stylesheet" href="calc.css">
         <script src="calc.js"></script>
 
     </head>
     <body>
-        <div>
+        <div class="box1">
             <input id="first"/>
         </div>
-        <div>
+        <div class="box2">
             <input id="second"/>
         </div>
         <div>
@@ -16,6 +17,7 @@
             <button onclick="sub()">Sub</button>
             <button onclick="mul()">Mul</button>
             <button onclick="div()">Div</button>
+            <button onclick="clearFields()">C</button>
         </div>
         <p class="output"></p>
     </body>
