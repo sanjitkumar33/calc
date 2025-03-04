@@ -81,3 +81,10 @@ Math.floor(Math.random()*1000000)
 673402
 Math.floor(Math.random()*1000000)
 189574
+//
+Math.PI.toFixed(3)
+'3.142'
+Math.PI.toFixed(4)
+'3.1416'
+Math.PI.toFixed(5)
+'3.14159'
