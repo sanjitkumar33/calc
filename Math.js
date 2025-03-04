@@ -22,3 +22,62 @@ Math.floor(10.3)
 10
 Math.floor(10.4)
 10
+
+//in the Math.ceil the value goes to higher side
+Math.ceil(10.1)
+11
+Math.ceil(10.2)
+11
+Math.ceil(9.1)
+10
+Math.ceil(11.2)
+12
+//In the Math.round the value goes to lower side
+Math.round(10.2)
+10
+Math.round(11.4)
+11
+Math.round(1.233)
+1
+Math.round(2.45)
+2
+//if Math.floor(Math.random()) it gives always 0
+//if Math.ceil(Math.random()) it gives always 1
+Math.floor(Math.random()*16)
+6
+Math.floor(Math.random()*16)
+4
+Math.floor(Math.random()*16)
+3
+Math.floor(Math.random()*16)
+1
+Math.floor(Math.random()*16)
+13
+Math.floor(Math.random()*16)
+7
+Math.floor(Math.random()*16)
+4
+
+//for otp value using
+Math.round(Math.floor()*16)
+NaN
+Math.round(Math.round()*16)
+NaN
+Math.round(Math.random()*16)
+8
+Math.round(Math.random()*16)
+3
+Math.round(Math.random()*16)
+2
+Math.round(Math.random()*16)
+0
+Math.floor(Math.random()*1000)
+540
+Math.floor(Math.random()*10000)
+5719
+Math.floor(Math.random()*1000000)
+282027
+Math.floor(Math.random()*1000000)
+673402
+Math.floor(Math.random()*1000000)
+189574
