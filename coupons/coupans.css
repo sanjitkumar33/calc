@@ -1,0 +1,15 @@
+#main{
+    background-color: grey;
+    height: 800px;
+    z-index: 1;
+}
+#coupan{
+    height: 300px;
+    width: 600px;
+    background-color: red;
+    margin-top: -40%;
+    margin-left: 30%;
+    position: absolute;
+    visibility: hidden;
+    z-index: 100;
+}
