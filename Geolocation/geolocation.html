@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
     <head>
         <title>Geolocation</title>
@@ -9,11 +10,12 @@
         <script>
             var x = document.getElementById("demo");
 
+           
             function getLocation(){
                 if(navigator.geolocation){
                     navigator.geolocation.getCurrentPosition(showPosition);
                 }else{
-                    x.innerHTML = "Geolocation functionality is not supported by this browser";
+                    x.innerHTML = "Geolocation functionality is not support by this browser";
                 }
             }
             function showPosition(position){
