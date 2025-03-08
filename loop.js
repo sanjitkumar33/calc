@@ -16,3 +16,9 @@ do{
     i++
 }
 while(i<5)
+
+// iterating method
+var city = ['Boston','America','washington','Helsinki','Amsterdam']
+for(mycity of city){
+    console.log(mycity)
+}
