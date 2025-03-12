@@ -1,13 +1,14 @@
 <!-- https://api.openweathermap.org/data/2.5/forecast/daily?q=Delhi&mode=json&units=metric&cnt=5&appid=fbf712a5a83d7305c3cda4ca8fe7ef29 -->
 <!-- https://api.openweathermap.org/data/2.5/forecast/daily?q=London&mode=json&units=metric&cnt=5&appid=fbf712a5a83d7305c3cda4ca8fe7ef29 -->
 <!-- https://api.openweathermap.org/data/2.5/forecast/daily?q=Montreal&mode=json&units=metric&cnt=5&appid=fbf712a5a83d7305c3cda4ca8fe7ef29 -->
+ <!-- https://api.openweathermap.org/data/2.5/forecast/daily?lat=28.6228287&lon=77.2821621&mode=json&units=metric&cnt=5&appid=fbf712a5a83d7305c3cda4ca8fe7ef29 -->
 
 <html>
     <head>
         <title>Geo Location</title>
     </head>
     <body>
-        <button>Get Location</button>
+        <button onclick="geolocation()">Get Location</button>
         <p id="out"></p>
         <p id="weather"></p>
         <script>
@@ -15,13 +16,16 @@
             let y = document.getElementById('weather');
             function geolocation(){
                 if(navigator.geolocation){
-                    navigator.geolocation.getCurrentPosition
+                    navigator.geolocation.getCurrentPosition(showPosition)
                 }else{
                     x.innerText="Geo not supported"
                 }
             }
             function showPosition(data){
-                
+                console.log(data)
+                let lat = data.coords.latitude
+                let lon = data.coords.longitude
+                x.innerText = `Latitude is ${lat} and longitude is ${lon}`
             }
         </script>
     </body>
