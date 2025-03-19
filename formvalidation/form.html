@@ -8,6 +8,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <!-- Latest compiled JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="form.js"></script>
 
     </head>
     <body>
@@ -20,15 +21,17 @@
             <div class="panel-body">
                 <div class="form-group" id="fdiv">
                     <label for="fname" class="control-label">First Name</label>
-                    <input name="fname" class="form-control" id="fname">
+                    <input name="fname" class="form-control" id="fname"
+                    onblur="validateFname()">
                     <p id="fout"></p>
                 </div>
             </div>
             <div class="panel-body">
                 <div class="form-group" id="fdiv">
-                    <label for="email" class="control-label">Email</label>
-                    <input name="email" class="form-control" id="email">
-                    <p id="pout"></p>
+                    <label for="mail" class="control-label">Email</label>
+                    <input name="mail" class="form-control" id="mail"
+                    oninput="validateEmail()">
+                    <p id="eout"></p>
                 </div>
             </div>
             <div class="panel-body">
