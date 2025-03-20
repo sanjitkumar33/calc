@@ -18,29 +18,33 @@
             <div class="panel-heading">
                 Forms
             </div>
-            <div class="panel-body">
-                <div class="form-group" id="fdiv">
-                    <label for="fname" class="control-label">First Name</label>
-                    <input name="fname" class="form-control" id="fname"
-                    onblur="validateFname()">
-                    <p id="fout"></p>
+            <form>
+                <div class="panel-body">
+                    <div class="form-group" id="fdiv">
+                        <label for="fname" class="control-label">First Name</label>
+                        <input name="fname" class="form-control" id="fname"
+                        onblur="validateFname()">
+                        <p id="fout"></p>
+                    </div>
                 </div>
-            </div>
-            <div class="panel-body">
-                <div class="form-group" id="fdiv">
-                    <label for="mail" class="control-label">Email</label>
-                    <input name="mail" class="form-control" id="mail"
-                    oninput="validateEmail()">
-                    <p id="eout"></p>
+                <div class="panel-body">
+                    <div class="form-group" id="fdiv">
+                        <label for="mail" class="control-label">Email</label>
+                        <input name="mail" class="form-control" id="mail"
+                        oninput="validateEmail()">
+                        <p id="eout"></p>
+                    </div>
                 </div>
-            </div>
-            <div class="panel-body">
-                <div class="form-group" id="fdiv">
-                    <label for="pwd" class="control-label">Password</label>
-                    <input name="pwd" class="form-control" id="pwd">
-                    <p id="pout"></p>
+                <div class="panel-body">
+                    <div class="form-group" id="fdiv">
+                        <label for="pwd" class="control-label">Password</label>
+                        <input name="pwd" class="form-control" id="pwd"
+                        type="password" minlength="8">
+                        <p id="pout"></p>
+                    </div>
                 </div>
-            </div>
+                <button type="submit" class="btn btn-success">Submit</button>
+            </form>
         </div>
     </div>
 
